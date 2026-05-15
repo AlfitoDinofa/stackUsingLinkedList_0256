@@ -95,3 +95,28 @@ int main()
         cout << "Enter your choice: ";
         cin >> choice;
 
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter the value to push: ";
+            cin >> value;
+            stack.push(value);
+            break;
+        case 2:
+            stack.pop();
+            break;
+        case 3:
+            stack.peek();
+            break;
+
+        case 4:
+            cout << "Exiting program." << endl;
+            break;
+        default:
+            cout << "Invalid choice. try again." << endl;
+            break;
+        }
+    }
+
+    return 0;
+}
